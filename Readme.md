@@ -1,26 +1,26 @@
-####Essential dev tools####
+#Essential dev tools
 
 Great Resource: https://www.datacamp.com/community/tutorials/python-developer-set-up
 
-#vscode extensions
+##vscode extensions
 Python extension by microsoft
 
-#linter
+##linter
 pylint (included in python vscode extension)
 
-#type checker
+##type checker
 mypy -> static type checker (ides like PyCharm will have this build in tho, not Vscode as of now)
 need to import typings for List, Set, Dict, Tuple, Optional, Callable, Iterator, Union (and more)
 so like this:
 from typing import List, Set, Dict, Tuple, Optional
 refer to https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
 
-#formatter
+##formatter
 formatter: popular are autopep8, black and yapf
 these are all built into python extension in vscode and you can switch between these
 WINNER: black, due to being opinionated and non configurable
 
-#package manager
+##package manager
 pip -> python package manager, equivalent to npm
 pip freeze -> List installed packages
 pip freeze > requirements.txt -> Put installed packages in a requirements file (all deps, this is similar to package.json)
@@ -28,7 +28,7 @@ pip install -r requirements.txt	-> Install packages listed in the given requirem
 check in requirements.txt to git repo
 great tool to use is pip-autoremove to remove a package and all its dependencies (without this, pip uninstall just removes the package itself without removing deps)
 
-#virtual environment
+##virtual environment
 venv -> python virtual env
 create with this command:
 py -m venv MYVENVNAME
